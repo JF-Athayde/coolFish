@@ -1,0 +1,9 @@
+.cargo {
+    color: #00e5ff;
+    font-size: 0.85rem;
+}
+
+.placeholder-white::placeholder {
+    color: white;
+    opacity: 1;
+}
