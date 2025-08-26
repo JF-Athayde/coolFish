@@ -26,8 +26,10 @@ async function enviarMensagem() {
     msgAssistente.textContent = resposta.resposta;
     chat.appendChild(msgAssistente);
 
-    // Scroll automático
-    chat.scrollTop = chat.scrollHeight;
+    // Scroll automático (com atraso mínimo para garantir renderização)
+    setTimeout(() => {
+    chat.lastElementChild?.scrollIntoView({ behavior: "smooth" });
+    }, 50);
 }
 
 document.getElementById("entrada").addEventListener("keydown", function(e) {

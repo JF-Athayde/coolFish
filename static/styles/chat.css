@@ -16,6 +16,19 @@ body {
     display: flex;
 }
 
+main {
+    margin-left: 16.666%; /* corresponde a col-2 em telas grandes */
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; /* ocupa altura toda */
+    overflow-y: auto; /* caso a lista fique maior que a tela */
+    z-index: 1030; /* acima do conteúdo */
+}
+
 /* Container geral */
 .app-container {
     display: flex;
@@ -52,6 +65,12 @@ body {
     flex-direction: column;
     gap: 12px;
     box-shadow: inset 0 0 8px rgba(0,0,0,0.6);
+}
+
+#chat {
+    flex: 1;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto !important;
 }
 
 /* Mensagens estilo balão */
