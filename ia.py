@@ -371,7 +371,7 @@ Dos anos 2010 para os tempos atuais, a introdução do metaverso e o desenvolvim
 """
 
     if historico:
-        prompt += "\nHistórico de conversa:\n" + "\n".join(historico)
+        prompt += "\nHistórico de conversa (Esse historico é de uso excluivo para a contextualização sobre oque foi dito anteriormente, porém você não deve cita as respostas do histórico, e sim apenas e exclusivamente a resposta da pergunta que foi feita):\n" + "\n".join(historico)
     prompt += f"\nUsuário: {mensagem_usuario}\nAssistente:"
 
     resposta = model.generate_content(prompt)
