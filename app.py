@@ -11,6 +11,7 @@ def index():
 def mensagem():
     mensagem_usuario = request.json.get("mensagem")
     resposta = conversar(mensagem_usuario)
+    print('Alguém enviou uma msg')
     return jsonify({"resposta": resposta})
 
 if __name__ == "__main__":
