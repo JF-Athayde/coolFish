@@ -126,6 +126,7 @@ aside {
 }
 
 .input-area button {
+    font-size: 12px;
     padding: 12px 20px;
     border: none;
     border-radius: 10px;
@@ -159,10 +160,10 @@ aside {
 button[data-bs-toggle="offcanvas"] {
     position: fixed; /* Mantém o botão fixo na tela */
     top: 10px;
-    left: 10px;
+    right: 10px;
     z-index: 1050; /* Acima da sidebar */
-    padding: 8px 12px;
-    font-size: 1.2rem;
+    padding: 2px 4px;
+    font-size: 0.9rem;
     border-radius: 8px;
 }
 
