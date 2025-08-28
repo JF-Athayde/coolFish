@@ -154,3 +154,21 @@ aside {
     background: #00bcd4;
     border-radius: 4px;
 }
+
+/* Botão do menu mobile */
+button[data-bs-toggle="offcanvas"] {
+    position: fixed; /* Mantém o botão fixo na tela */
+    top: 10px;
+    left: 10px;
+    z-index: 1050; /* Acima da sidebar */
+    padding: 8px 12px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+/* Ajuste do main quando sidebar colapsada */
+@media (max-width: 767.98px) {
+    main {
+        margin-left: 0; /* Remove margem quando sidebar está offcanvas */
+    }
+}

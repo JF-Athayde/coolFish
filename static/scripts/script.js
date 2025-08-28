@@ -1,4 +1,8 @@
 async function enviarMensagem() {
+    setTimeout(() => {
+    chat.lastElementChild?.scrollIntoView({ behavior: "smooth" });
+    }, 50);
+    
     const input = document.getElementById("entrada");
     const texto = input.value.trim();
     if(!texto) return;
